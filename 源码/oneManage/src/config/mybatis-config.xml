@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="User" type="com.model.user.User"/>
+        <typeAlias alias="FriendLink" type="com.model.web.FriendLink"/>
+         <typeAlias alias="Menu" type="com.model.sys.Menu"/>
+         <typeAlias alias="Role" type="com.model.sys.Role"/>
+    </typeAliases>
+    <mappers>
+        <mapper resource="com/mapper/user/userMapper.xml" />
+        <mapper resource="com/mapper/web/friendLinkMapper.xml" />
+        <mapper resource="com/mapper/sys/menuMapper.xml" />
+        <mapper resource="com/mapper/sys/roleMapper.xml" />
+    </mappers>
+</configuration>
